@@ -1,8 +1,8 @@
 typedef struct Stats
 {
-  int average;
-  int min;
-  int max;
+  float average;
+  float min;
+  float max;
 }STATS;
 STATS compute_statistics(const float* numberset, int setlength);
 
