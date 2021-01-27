@@ -5,7 +5,8 @@
 
 #include <stdlib.h>
 #include <math.h>
-
+alerter_funcptr emailAlerter=0;
+alerter_funcptr ledAlerter=0;
 TEST_CASE("reports average, minimum and maximum") {
     float numberset[] = {1.5, 8.9, 3.2, 4.5};
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
