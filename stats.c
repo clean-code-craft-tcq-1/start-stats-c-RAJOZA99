@@ -8,7 +8,7 @@ STATS compute_statistics(const float* numberset, int setlength) {
     s.max = 0;
     return s;
 }
-void check_and_alert()
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[], STATS computedStats)
 {
     emailAlertCallCount = 1;
     ledAlertCallCount = 1;
